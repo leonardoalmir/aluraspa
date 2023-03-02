@@ -1,0 +1,37 @@
+@import '../abstract/variaveis';
+
+#curiosidades {
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    .curiosidades__container-img {
+        width: 35%;
+        .curiosidades__img {
+            max-width: 100%;
+        }
+    }
+    .curiosidades__infos {
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+        .curiosidades__titulo {
+            font-size: $tamanho-do-texto / 1.5;
+            color: $cor-secundaria;
+            text-transform: uppercase;
+            font-weight: 400;
+        }
+        .curiosidades__subtitulo {
+            font-size: $tamanho-do-texto / 2.5;
+            font-weight: 300;
+        }
+        .curiosidades__texto {
+            font-size: $tamanho-do-texto / 3;
+            font-weight: 300;
+            color: $cor-primaria;
+            line-height: 1.25rem;
+        }
+    }
+}
